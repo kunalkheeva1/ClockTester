@@ -4,6 +4,8 @@ import java.awt.geom.Ellipse2D;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
+
+//class that implements Icon
  class ClockIcon implements Icon {
     private int size;
 
@@ -32,6 +34,8 @@ import java.util.GregorianCalendar;
         graphics2D.draw(circle);
 
 
+
+        //use of the calendar
         GregorianCalendar gCal = new GregorianCalendar();
 
         int hour = gCal.get(Calendar.HOUR);
@@ -42,6 +46,7 @@ import java.util.GregorianCalendar;
         double hourAngle = 0.5*(60*hour + min) + 90;
         double secondAngle = sec*6 +90;
 
+        //drawing the lines(hands of the clock)
         graphics2D.drawLine(centerX, centerY, centerX - (int)(75*Math.cos(Math.toRadians(minuteAngle))), centerY - (int)(70*Math.sin(Math.toRadians(minuteAngle))));
         graphics2D.drawLine(centerX, centerY, centerX - (int)(50*Math.cos(Math.toRadians(hourAngle))), centerY - (int)(50*Math.sin(Math.toRadians(hourAngle))));
         graphics2D.setColor(Color.GREEN);
@@ -50,7 +55,7 @@ import java.util.GregorianCalendar;
 }
 
 
-
+//execution in the main class
 public class ClockTester {
     public static void main(String[] args) {
         JFrame frame = new JFrame();
