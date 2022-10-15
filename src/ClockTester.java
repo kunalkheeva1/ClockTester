@@ -44,7 +44,7 @@ import java.util.GregorianCalendar;
 
         graphics2D.drawLine(centerX, centerY, centerX - (int)(75*Math.cos(Math.toRadians(minuteAngle))), centerY - (int)(70*Math.sin(Math.toRadians(minuteAngle))));
         graphics2D.drawLine(centerX, centerY, centerX - (int)(50*Math.cos(Math.toRadians(hourAngle))), centerY - (int)(50*Math.sin(Math.toRadians(hourAngle))));
-        graphics2D.setColor(Color.RED);
+        graphics2D.setColor(Color.GREEN);
         graphics2D.drawLine(centerX, centerY, centerX - (int)(100*Math.cos(Math.toRadians(secondAngle))), centerY - (int)(100*Math.sin(Math.toRadians(secondAngle))));
     }
 }
@@ -56,7 +56,7 @@ public class ClockTester {
         JFrame frame = new JFrame();
 
         frame.setTitle("ClockTester");
-        frame.setSize(500,500);
+        frame.setSize(200,200);
 
         ClockIcon clockIcon = new ClockIcon(500);
         JLabel label = new JLabel(clockIcon);
