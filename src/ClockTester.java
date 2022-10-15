@@ -52,5 +52,17 @@ public class ClockIcon implements Icon {
 
 
 public class ClockTester {
-    
+    public static void main(String[] args) {
+        JFrame frame = new JFrame();
+
+        frame.setTitle("ClockTester");
+        frame.setSize(500,500);
+
+        ClockIcon clockIcon = new ClockIcon(500);
+        JLabel label = new JLabel(clockIcon);
+
+        frame.add(label);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
 }
