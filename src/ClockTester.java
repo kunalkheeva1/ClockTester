@@ -4,7 +4,7 @@ import java.awt.geom.Ellipse2D;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class ClockIcon implements Icon {
+ class ClockIcon implements Icon {
     private int size;
 
     public ClockIcon(int size){
