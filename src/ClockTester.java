@@ -26,7 +26,7 @@ import java.util.GregorianCalendar;
     @Override
     public void paintIcon(Component c, Graphics g, int x, int y) {
         Graphics2D graphics2D = (Graphics2D) g;
-        Ellipse2D.Double circle = new Ellipse2D.Double(x,y,200,200);
+        Ellipse2D.Double circle = new Ellipse2D.Double(x,y,300,300);
         int centerX =(int)circle.getCenterX();
         int centerY =(int) circle.getCenterY();
         graphics2D.draw(circle);
@@ -62,6 +62,7 @@ public class ClockTester {
         JLabel label = new JLabel(clockIcon);
 
         frame.add(label);
+        frame.pack();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
