@@ -70,5 +70,9 @@ public class ClockTester {
         frame.pack();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
+        while (1 > 0) {
+            frame.repaint(10);
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        }
     }
 }
